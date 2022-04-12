@@ -1,0 +1,279 @@
+<html>
+    <head>
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Resources</title>
+        <link rel="icon" type="image/x-icon" href="favi3.ico">
+        <style>
+            *
+            {
+                font-family:fantasy
+            }
+            #MSimg
+            {
+                display:none;
+            }
+            #hsTextImg
+            {
+                display:none;
+            }
+            #middleschoolText
+            {
+                display:none;
+            }
+            #uniTextImg
+            {
+                display:none;
+            }
+            #workTextImg
+            {
+                display:none;
+            }
+            #navbar
+            {
+               background-color:white;
+               font-size: 24px; 
+               padding-top: 10px;
+               padding-right: 20px; 
+              
+               margin-top:-10px;
+               margin-right: -20x;
+               overflow:auto
+            }
+            #navbar a
+            {
+                 color: black;
+                 text-align: left;
+                 padding-bottom: 20px;
+                 text-decoration: none;
+            }
+            #navbar a:hover
+            {
+                background-color: thistle;
+            }
+
+            #navbar img:hover
+            {
+                background-color: thistle;
+                padding-bottom: 7px;
+            }
+            body
+            {
+                margin: 0;
+                padding: 0;
+            }
+            #goal
+            {
+                float:left
+              
+            }
+            .textRight
+            {
+                padding-left: 20px;
+                padding-top: 30px;
+                padding-right: 20px;
+                
+                float:right
+            }
+            .column 
+            {
+                float: right;
+                padding-left: 10px;
+                padding-bottom: 60px;
+            }
+            .row::after 
+            {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .moveimage
+            {
+                position: relative;
+                top: 100px;
+                left: -60px;
+            }
+            .midtitle
+            {
+                position: absolute;
+                margin-top: 100px;
+                right: 100px;
+                font-size: 55px;
+                font-family:'Times New Roman';
+                color: rgb(255, 255, 255);
+            }
+            #button1
+            {
+                width: 270px;
+                height: 270px;
+                position: relative;
+                top:-769px;
+                left: 20px;
+            }
+            #button2
+            {
+                width: 270px;
+                height: 270px;
+                position: relative;
+                top:-769px;
+                left: 20px;
+            }
+            #button3
+            {
+                width: 270px;
+                height: 270px;
+                position: relative;
+                top:-769px;
+                left: 20px;
+            }
+            #edu
+            {
+                width: 250px;
+                height: 250px;
+            }
+            #serv
+            {
+                width: 250px;
+                height: 250px;
+            }
+            #supp
+            {
+                width: 250px;
+                height: 250px;
+            }
+            #question
+            {
+                font-size: 30px;
+                left: 20px;
+                background-color: rgb(255, 215, 255);
+            }
+            #eduName
+            {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 30;
+                left: 20;
+                background-color: rgb(255, 238, 238);
+            }
+            table
+            {
+                border: 2px green solid;
+                border-collapse: separate;
+                border-spacing: 10px;
+                width: 80%;
+                text-align: center;
+                margin: auto;
+            }
+            td
+            {
+                border: 1px blue solid;
+                padding: 5px;
+            }
+            #untitle
+            {
+                font-size: 50px;
+            }
+        </style>
+        
+    <body style="background-color:rgb(230, 176, 176);">
+        
+        <div id="navbar">
+
+            <a href="home2.html"target="_blank">
+            <img id="goal" src="goal.png" width="100" ></a>
+                
+            <a class="textRight"href="Support.html"target="_blank"><i class="fa fa-fw fa-heart"></i>Support</a>
+            <a class="textRight"href="Resources.html"target="_blank"><i class="fa fa-tree"></i>Resources</a>
+            <a class="textRight"href="Learn.html"target="_blank"><i class="fa fa-bar-chart"></i>Learn</a> 
+        </div>    
+        <div id="question" >
+                Do you want to help the cause through community service? Here's the page for you!
+        </div>
+        <div id="question">
+                Please select your current level of education here, we will provide reliable resources for you.</div>
+        </div>
+        </div id="radio">
+            <input type="radio" id="ms" name="years">
+            <label for="ms">Middle School</label>
+            <input type="radio" id="hs"name="years" >
+            <label for="hs">High School</label>
+            <input type="radio" id="uni"name="years">
+            <label for="uni">University/College</label>
+            <input type="radio" id="work"name="years">
+            <label for="work">Work</label>
+            <button id="showYear" onclick="showLogos();">Show Resorces!</button>
+            <div id="message"></div>
+        </div>
+            <script type="text/javascript">
+                function showLogos()
+                {
+                    if (document.getElementById("ms").checked == true)
+                    {
+                        showMS()
+                    }
+                    if (document.getElementById("hs").checked == true)
+                    {
+                        showHS()
+                    }
+                    if (document.getElementById("uni").checked == true)
+                    {
+                        showUNI()
+                    }
+                    if (document.getElementById("work").checked == true)
+                    {
+                        showWORK()
+                    }
+                }
+                function showMS()
+                {
+                    document.getElementById("message").innerHTML="If you are a middle schooler, it might still be a bit early to volunteer! But it is great to have the passion. Here are a few great for middle schoolers to attend: https://www.rcdpinternationalvolunteer.org/summer-volunteer-abroad-programs.php, https://govolunteerafrica.org/teens-high-school-volunteer-programs/, https://www.projects-abroad.ca/volunteer-africa/teaching/";
+
+                    document.getElementById("MSimg").style.display="block";
+                    document.getElementById("hsTextImg").style.display="none";
+                    document.getElementById("uniTextImg").style.display="none";
+                    document.getElementById("workTextImg").style.display="none";
+                }
+                function showHS()
+                {
+                    document.getElementById("message").innerHTML="It is awesome that you are willing to volunteer!Here are some great opportunities: https://www.teenlife.com/l/gap/pre-school-teaching-school-enrichment-volunteering-in-south-africa/, https://www.gooverseas.com/high-school-abroad/africa, https://www.volunteerforever.com/article_post/volunteer-to-build-schools-and-teach-in-africa/, https://www.volunteerhq.org/ca/high-school-volunteer-abroad/, https://www.projects-abroad.ca/trip-format/high-school-specials/" ;
+                    document.getElementById("hsTextImg").style.display="block";
+                    document.getElementById("MSimg").style.display="none";
+                    document.getElementById("uniTextImg").style.display="none";
+                    document.getElementById("workTextImg").style.display="none";
+                }
+                function showUNI()
+                {
+                    document.getElementById("message").innerHTML="It is wonderful that you are willing to volunteer! Here are some wonderful opportunities: https://www.volunteerforever.com/article_post/volunteer-to-build-schools-and-teach-in-africa/, https://www.volunteerhq.org/ca/blog/volunteer-abroad-for-college-students/, https://www.volunteerfdip.org/all-free-volunteer-abroad-programs-for-college-students/, https://www.projects-abroad.ca/university-students/, https://www.volunteeringsolutions.com/blog/affordable-international-volunteer-opportunities-for-college-students/, https://www.goabroad.com/articles/volunteer-abroad/best-volunteer-abroad-programs-college-students";
+                    document.getElementById("uniTextImg").style.display="block";
+                    document.getElementById("hsTextImg").style.display="none";
+                    document.getElementById("Msimg").style.display="none";
+                    document.getElementById("workTextImg").style.display="none";
+                }
+                function showWORK()
+                {
+                    document.getElementById("message").innerHTML="Thank you for trying to find resources to volunteer! If you are currently working, here are some great resources! https://www.volunteeringsolutions.com/volunteer-in-africa, https://www.gooverseas.com/volunteer-abroad/africa, https://www.volunteerworld.com/en/volunteer-abroad/africa, https://africanimpact.com/, https://www.gvi.co.uk/volunteer-in-africa/";
+                    document.getElementById("workTextImg").style.display="block";
+                    document.getElementById("hsTextImg").style.display="none";
+                    document.getElementById("uniTextImg").style.display="none";
+                    document.getElementById("MSimg").style.display="none";
+                }
+            </script>
+
+            </div>
+
+        <div id="eduName" >
+            
+            <div id="MSimg">
+                <img src="mid.png" width="70%">
+            </div>
+            <div id="hsTextImg">
+                <img src="hs.jpeg" width="70%">
+            </div>
+            <div id="uniTextImg">
+                <img src="uni.jpeg" width="70%">
+            </div>
+            <div id="workTextImg">
+                <img src="work.jpeg" width="70%">
+            </div>
+
+
+    </body>
+</html>
